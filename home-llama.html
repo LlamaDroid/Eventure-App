@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+		<title>Home</title>	
+		<style>
+			.container {
+				width: 100%;
+				height: 368px;
+				border-radius: 9px;
+				background-color: transparent;
+				float: middle;
+			}
+
+			.events {
+				background-color: #F2DBFF;
+				position: relative;
+				top: 126px;
+			}
+
+			.lessons {
+				background-color: #DDA3FF;
+				position: relative;
+				top: 126px;
+			}
+	
+			h2 	{
+				text-align: center;
+				padding-top: 50px;
+				padding-left: -50px;
+			}
+
+			.img1  {
+			    display: block;
+			    margin: 0 auto;
+			}
+			.home-text 	{
+				background-color: transparent;
+				color: #2019F2;
+				font-family: Arial;
+				font-size: 80px;
+			}
+			a 	{
+				font-color: white;
+			}
+
+		</style>
+	</head>
+
+	<body> 
+	<div style=" z-index: 0; background-color: #a100ff; position: relative; padding: 10px; border: 1px solid #a100ff; box-shadow: 0px 5px 20px slategrey;" >
+		<!--^drop shadow thing-->
+		<span style=" color:#DDA3FF; font-size:99px;cursor:pointer" onclick="openNav()">&#9776;</span>	
+
+	</div>
+	<script>
+	function openNav() {
+	  document.getElementById("mySidenav").style.width = "250px";
+	}
+
+	function closeNav() {
+	  document.getElementById("mySidenav").style.width = "0";
+	}
+	</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <img class="imgU" src="images/user-img.png"  width="200px">
+	  <a href="settings.html">User Name</a>
+	  <a href="home-llama.html">Home</a>
+	  <a href="view-events.html">View Events</a>
+	  <a href="create-event.html">Create Event</a>
+	  <a href="view-lesson.html">View Lessons</a>
+	  <a href="create-lesson.html">Create Lesson</a>
+	  <a href="notification.html">Notifications    &#x2714;</a> 
+	</div>
+	<!--	<div class="profile_pic" style=" z-index: 20; margin: -8% 50%; width:125px;height:125px; box-shadow: 10px -10px 20px  slategrey; border-radius:100px;">
+			<img src="images/user-img.png" width="125px" z-index="2" height="125 px" text-align="center" id="user">
+		</div>
+		
+		<div style=" align-self: left; margin-top:65px;">
+			<h2 class="home"> User Name </h2>
+		</div>-->
+
+		<div class="container events">
+			<h1 class="home-text"> Events</h1>
+			<a href="view-events.html"><img class="img1" src="images/event-icon.png"  alt="events" width="200px"></a>
+		</div>
+		
+		<div class="container lessons">
+			<h1 class="home-text" > Lessons</h1>
+			<a href="view-lesson.html"><img class="img1" src="images/lesson-icon.png" alt="lessons" width="200px" ></a>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+    function adder(){
+            var table = document.getElementById("tableAdd");
+            var row = document.createElement("tr");    
+                            var cell = document.createElement("td");
+                            var detail = document.createElement("input");
+                            detail.type = "text";
+                            detail.name = "blah";
+                            cell.appendChild(detail);
+                            row.appendChild(cell);
+                            table.appendChild(row);
+          }
+        $(function(){
+            $("#button_add_input").click(function(event){
+                var textArea = "<textarea name='new_quote[]' />";
+                $("#div_quotes").append(textArea);
+                $("#div_quotes").append("\n<br />");
+            });
+        });
+   </script> 
+        <title>Input New Lesson</title>
+        <link rel="stylesheet" type="text/css"
+        href="styles/style.css">
+</head>
+<body>
+            <div style="background-color: #a100ff; position: relative; padding: 10px; border: 1px solid a100ff; box-shadow: 0px 5px 20px slategrey;" ><!--^drop shadow thing-->
+            <a href="view-lesson.html"><img src="images/back-arrow.png" alt="back arrow" width="10%"></a>
+
+
+            <h1> Input New Lesson </h1>
+        </div>
+<form action="submission.html" method="POST">
+           <div id="addlessons">
+			<!--user input field-->
+			 <label><h2>Title</h2></label>
+             <section class="title">
+    	    	<input type="text" name="title" id="event_title">
+	        </section>
+	        <br>
+			<label><h2>Description</h2></label>
+ 				<table style=" margin: 0 auto;" class="inner" id="tableAdd">
+      	         <tr>
+                    <td><input type="text" ></td>
+                 </tr>
+                </table>
+                <button onclick="adder()" input type="button" value="Add Text Area" id="button_add_input">Add More</button>
+
+				
+                <h4><label>Mark as Private</label>
+                <input id="privacy" name="private" type="checkbox" value="private"></h4>
+               
+
+                <h4>Invite to Contribute  <a href="invite.html"><img src="images/user.png" alt="plus user" width="20px"></a></h4>
+			<!--submit button-->
+			<section class="submission">
+ 	        	<input onclick="myFunction()" type="submit" value="Submit">
+	        </section>
+			
+</div>
+
+</form>
+</body>
+</html>

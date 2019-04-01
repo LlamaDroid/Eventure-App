@@ -1,0 +1,80 @@
+body {
+  font-family: "Arial";
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #a100ff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+			.container {
+				width: 100%;
+				height: 368px;
+				border-radius: 9px;
+				background-color: transparent;
+				float: middle;
+			}
+
+			.events {
+				background-color: #F2DBFF;
+				position: relative;
+				top: 126px;
+			}
+
+			.lessons {
+				background-color: #DDA3FF;
+				position: relative;
+				top: 126px;
+			}
+	
+
+			h2 	{
+				text-align: center;
+				padding-top: 50px;
+				padding-left: -50px;
+			}
+
+			.img1  {
+			    display: block;
+			    margin: 0 auto;
+			}
+			.home-text 	{
+				background-color: transparent;
+				color: #2019F2;
+				font-family: Arial;
+				font-size: 80px;
+			}

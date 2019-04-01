@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css"
+		href="styles/style.css">	
+		<title>Events</title>
+	</head>
+	<body>
+		<div style="background-color: #a100ff; position: relative; padding: 10px; border: 1px solid a100ff; box-shadow: 0px 5px 20px slategrey;" >
+			<!--^drop shadow thing-->
+			<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="home-llama.html">Home</a>
+  <a href="view-events.html">View Events</a>
+  <a href="create-event.html">Create Event</a>
+  <a href="view-lesson.html">View Lessons</a>
+  <a href="create-lesson.html">Create Lesson</a>
+	  <a href="notification.html">Notifications    &#x2714;</a> 
+</div>
+
+
+		<span style=" color:#DDA3FF; font-size:99px;cursor:pointer" onclick="openNav()">&#9776;</span>	
+
+
+
+
+			<h1> Events </h1>
+		</div>
+
+		<div>
+			<h5> MY EVENTS </h5>
+			<ul>
+				<li>Pizza Party</li><input type="button" onclick="location.href='voting-results.html';" value="VIEW"/><br>
+				<li>Tasks For This Week</li><input type="button" onclick="location.href='voting-results.html';" value="VIEW"/><br>
+				<li>Weekend Activities</li><input type="button" onclick="location.href='voting-results.html';" value="VIEW"/><br>
+				<li>Color of New Logo</li><input type="button" onclick="location.href='voting-results.html';" value="VIEW"/><br>
+			</ul>
+		</div>
+
+
+
+		<br><br>
+		<a href="create-event.html"><img src="images/plus.png" align="right" alt="create event" width="8%"></a>
+		<br><br><br>
+
+		<hr>
+
+<!--edit buttons-->
+<!--add button, plus-->
+		<div>
+			<h5>EVENT INVITES</h5>
+			<ul>
+				<a href="vote.html"><li>Tasks for this Week</li></a><br>
+				<a href="vote.html"><li>Weekend Activities</li></a><br>
+				<a href="vote.html"><li>House Party</li></a><br>
+				<a href="vote.html"><li>Color of New Logo</li></a><br>
+			</ul>
+		</div>
+	</body>
+</html>

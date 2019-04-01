@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<title> Create Event</title>
+		<div style="background-color: #a100ff; position: relative; padding: 10px; border: 1px solid #a100ff; box-shadow: 0px 5px 20px slategrey;" >
+			<!--^drop shadow thing-->
+			<a href="view-events.html"><img src="images/back-arrow.png" alt="back arrow" width="10%"></a>
+			<h1> Create Event </h1>
+		</div>
+	</head>
+	<body>
+		<h2>Event Name:</h2>
+			<section class="event_title">
+   	    		<label for="event_title"></label>
+   				<input type="text" name="event_title" id="event_title">
+      		 </section>
+
+		<h2>Date Due:</h2>
+			<section class="event-title">
+				<label for="due"></label>
+				<input type="text" name="due" id="due">
+       		</section><br>
+
+		<h2>Items to be Ranked</h2>
+			<section class="event-title">
+   	     		<label for="item"></label>
+   				<input type="text" name="item" id="item">
+    	   </section><br>
+
+		<h4>Add Another Item</h4>
+
+
+
+		<h2>Select Ranking Type</h2>
+		<section class="buttons">
+			<button onclick="myFunction()">1, 2, 3...</button>
+			<script>
+				function myFunction(){
+					//change visuals of box to be either highlighted or fully filled in
+				}
+			</script>
+			<button onclick="myFunction()">Hi, Med, Low Priority</button>
+			<script>
+				function myFunction(){
+					//change visuals of box to be either highlighted or fully filled in
+				}
+			</script>
+		</section>
+<!--question icon, ranking buttons-->
+<br><br>
+
+        <table style=" margin: 0 auto;">
+		    <section class="privacy">
+				<tr>
+   					<td><input type="radio" name="privacy" id="priv" value="private" checked></td>
+    				<td><label for="num">Private List</label></td>
+				    <td><input type="radio" name="privacy" id="publ" value="public"></td>
+				    <td><label for="hml">Public List</label></td>
+				</tr>
+			</section>
+		</table>
+
+<!--radio buttons for privacy-->
+		<h2>Description</h2>
+<!--user input field-->
+
+			<section class="description">
+    	       <textarea id="desc" name="desc" rows="4" cols="40"></textarea>
+       		</section>
+			<section class="submission">
+ 	        	<input onclick="myFunction()" type="submit" value="Submit">
+	        </section>
+			
+	</body>
+</html>
